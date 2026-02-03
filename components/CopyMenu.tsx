@@ -5,7 +5,7 @@ interface CopyMenuProps {
   commands: {
     https: string
     cli: string
-    npx: string
+    ssh: string
   }
   onCopy: (text: string) => void
   showMenu: boolean
@@ -20,7 +20,7 @@ export function CopyMenu({ commands, onCopy, showMenu }: CopyMenuProps) {
       {[
         { label: "HTTPS", value: commands.https },
         { label: "GitHub CLI", value: commands.cli },
-        { label: "npx", value: commands.npx },
+        { label: "SSH", value: commands.ssh },
       ].map((item) => (
         <button
           key={item.label}

@@ -11,7 +11,7 @@ export function NavbarIcons() {
     <div className="hidden md:flex items-center gap-2">
       <IconButton
         label="GitHub"
-        onClick={() => window.open("https://github.com/Porpathom", "_blank")}
+        onClick={() => window.open("https://github.com/Porpathom/cat", "_blank")}
       >
         <Github className="w-5 h-5" />
       </IconButton>

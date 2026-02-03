@@ -3,9 +3,9 @@
 import CopyButton from "@/components/CopyButton"
 
 const CLONE_COMMANDS = {
-    https: "git clone https://github.com/yourname/your-repo.git",
-    cli: "gh repo clone yourname/your-repo",
-    npx: "npx create-next-app@latest --example yourname/your-repo",
+    https: "git clone https://github.com/Porpathom/cat.git",
+    cli: "gh repo clone Porpathom/cat",
+    ssh: "git clone git@github.com:Porpathom/cat.git",
 }
 
 export function HeroSection() {
@@ -23,7 +23,7 @@ export function HeroSection() {
                 <div className="mt-6">
                     <div className="flex items-center gap-3 rounded-xl border bg-white dark:bg-black border-gray-200 dark:border-white/10 px-3 py-2 w-fit">
                         <code className="truncate text-left text-sm text-black dark:text-gray-300 font-mono whitespace-nowrap">
-                            {CLONE_COMMANDS.https}
+                            $ {CLONE_COMMANDS.cli}
                         </code>
 
                         <CopyButton

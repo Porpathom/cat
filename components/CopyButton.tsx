@@ -9,7 +9,7 @@ interface CopyButtonProps {
   commands?: {
     https: string
     cli: string
-    npx: string
+    ssh: string
   }
   label?: string
   iconOnly?: boolean
